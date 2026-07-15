@@ -1,0 +1,28 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "MIT"
+
+[[mods]]
+    modId = "aerokitten_bot"
+    version = "1.0.0"
+    displayName = "AeroKitten Bot"
+    logoFile = "aerokitten_bot.png"
+    credits = "AeroKitten"
+    authors = "AeroKitten"
+    description = '''
+        Headless Minecraft bot client for AeroKitten server.
+        Auto-connects to the configured server and provides
+        TCP-based command control.
+    '''
+    [[mods.dependencies]]
+        modId = "neoforge"
+        mandatory = true
+        versionRange = "[21,)"
+        ordering = "NONE"
+        side = "CLIENT"
+    [[mods.dependencies]]
+        modId = "minecraft"
+        mandatory = true
+        versionRange = "[1.21.1,1.21.2)"
+        ordering = "NONE"
+        side = "CLIENT"

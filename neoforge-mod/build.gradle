@@ -1,0 +1,55 @@
+plugins {
+    id 'java-library'
+    id 'net.neoforged.gradle.userdev' version '7.0.171'
+}
+
+base {
+    archivesName = mod_id
+}
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    implementation "net.neoforged:neoforge:${neo_version}"
+
+    annotationProcessor "org.spongepowered:mixin:0.8.5:processor"
+
+    runtimeOnly fileTree(dir: 'run/mods', include: '*.jar')
+}
+
+def refMapFile = "${project.layout.buildDirectory.get().asFile}/classes/java/main/aerokitten_bot.refmap.json"
+
+tasks.named('compileJava', JavaCompile) {
+    options.compilerArgs << "-AoutRefMapFile=${refMapFile}"
+}
+
+tasks.named('jar', Jar) {
+    manifest {
+        attributes([
+            "Specification-Title"     : mod_name,
+            "Specification-Vendor"    : mod_authors,
+            "Specification-Version"   : "1",
+            "Implementation-Title"    : project.name,
+            "Implementation-Version"  : project.jar.archiveVersion,
+            "Implementation-Vendor"   : mod_authors,
+            "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ"),
+            "MixinConfigs"            : "aerokitten_bot.mixins.json"
+        ])
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+    options.compilerArgs << '-parameters'
+}
+
+afterEvaluate {
+    tasks.named('runClient', JavaExec) {
+        environment 'DISPLAY', System.getenv('DISPLAY') ?: ':99'
+    }
+}

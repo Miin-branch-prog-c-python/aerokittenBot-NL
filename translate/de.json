@@ -1,0 +1,12 @@
+{ 
+    "MOD_1": "\n-# Wenn du mit mir reden möchtest, ich bin im Chat <#1495777836269834340> verfügbar", 
+    "MOD_2": "\n-# Wenn du sehen willst, wie viele Plätze auf dem Server noch verfügbar sind, dann nutze den Befehl `/history`",
+    "MOD_3": "\n-# Ich bin ein Bot, der von <@507816376795267072> entwickelt wurde. Wenn es Probleme oder Vorschläge gibt, melde dich gerne, und rede mit Ihm",
+    "MOD_4": "\n-# Das übersetzen von allen Nachrichten des Bots dauert eine Weile. Wenn du möchtest, kannst du mir gerne beim Übersetzen von den Nachrichten in andere Sprachen helfen. Kontaktiere dafür <@507816376795267072>",
+    "MOD_5": "\n-# Hey, Ich unterstütze nun auch die Slash-Befehle, nutze dafür den Befehl `/status` um den Server Status zu sehen",
+    "MOD_6": "\n-# Übersetzt von <@1154016754419380326>",
+    "status_message_server_full": "Server Status: {0}/{1} Spieler, {2} Spieler warten",
+    "status_message_server_not_full": "Server Status: {0}/{1} Spieler, {2} Verfügbare Plätze",
+    "status_message_server_error":"Fehler beim Abrufen des Serverstatus, der Server ist möglicherweise offline",
+    "history_message":"Hier sind die Zahlen von allen Spielern, die heute online waren" 
+}

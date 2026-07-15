@@ -1,0 +1,13 @@
+{
+    "required": true,
+    "package": "com.aerokitten.bot.mixin",
+    "compatibilityLevel": "JAVA_21",
+    "refmap": "aerokitten_bot.refmap.json",
+    "client": [
+        "ChatMixin"
+    ],
+    "injectors": {
+        "defaultRequire": 1
+    },
+    "minVersion": "0.8"
+}

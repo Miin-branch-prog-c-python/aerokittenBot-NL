@@ -1,0 +1,23 @@
+{
+    "MOD_1": "\n-# si tu veux parler avec moi, je suis dispo dans le salon <#1495777836269834340>",
+    "MOD_2": "\n-# si tu veux voire la disponibilité des place dans le server, utilise la commande `/history`",
+    "MOD_3": "\n-# Je suis un bot dev par <@507816376795267072>, si il y a des bugs ou des suggestions, n'hésite pas à lui en parler",
+    "MOD_4": "\n-# traduire tout les message du bot est long, mais si tu veux aider, tu peux m'aider à traduire les message du bot dans d'autres langues, pour cela, contacte <@507816376795267072>",
+    "MOD_5": "\n-# Hey, je suporte maintenant les commandes slash, tu peut essayer la commande `/status` pour voir le statut du serveur",
+    "MOD_6": "\n-# translate by <@507816376795267072>",
+    "status_message_server_full": "statut du serveur : {0}/{1} joueurs, {2} personnes en attente",
+    "status_message_server_not_full": "statut du serveur : {0}/{1} joueurs, {2} places disponibles",
+    "status_message_server_error": "erreur lors de la récupération du statut du serveur, le serveur est potentiellement hors ligne",
+    "history_message":"Voici le nombre de joueurs en ligne pendant la journée",
+    "dashboard_queue_title":  "FILE D'ATTENTE",
+    "dashboard_players":      "JOUEURS",
+    "dashboard_online":       "EN LIGNE",
+    "dashboard_waiting":      "EN ATTENTE",
+    "dashboard_updated_at":   "MIS À JOUR",
+    "dashboard_graph_title":  "HISTORIQUE — RATIO JOUEURS",
+    "dashboard_curve_total":  "TOTAL",
+    "dashboard_curve_online": "EN LIGNE",
+    "dashboard_curve_wait":   "ATTENTE",
+    "dashboard_now":          "MAINTENANT",
+    "dashboard_unknown_date": "-- / -- / ----"   
+}
